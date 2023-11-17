@@ -9,13 +9,16 @@
 $jsonData = file_get_contents('../../data/doctorData.json');
 $phpdata = json_decode($jsonData, true);
 
-foreach ($phpdata as $data) {
+foreach ($phpdata as $data)
+{
     echo '<h1>User Information</h1>';
-    echo '<p>Name: ' . $data['UserName'] . '</p>';
+    echo "<img src=".$data['profilePicture']." /><br>";
+    echo '<p>FirstName: ' . $data['firstName'] . '</p>';
+    echo '<p>LastName: ' . $data['lastName'] . '</p>';
     echo '<p>Email: ' . $data['Email'] . '</p>';
-    echo '<p>Phone Number: ' . $data['Phone Number'] . '</p>'; 
-    echo '<p>Gender: ' . $data['Gender'] . '</p>';
-    echo '<p>Address: ' . $data['Address'] . '</p>';
+    echo '<p>Phone Number: ' . $data['Contact'] . '</p>';
+    echo '<p>Gender: ' . $data['gender'] . '</p>';
+    echo '<p>Address: ' . $data['HomeAddress'] . '</p>';
 }
 ?>
 <p><a href="doctor_management.php">Go back.</a></p>

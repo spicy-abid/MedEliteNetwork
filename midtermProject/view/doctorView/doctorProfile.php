@@ -40,10 +40,10 @@ include("../../controller/doctorControll/doctorProfileProcess.php");
      <a  href='../../controller/doctorControll/logoutProcess.php' >Logout </a>
     
 </form>
-<!-- <footer>
+<footer>
         Author: Hossain, Md Abid
         <br>
         <a href="abidhossain6781@gmail.com">E-mail</a>
-    </footer> -->
+    </footer>
 </body>
 </html>

@@ -58,7 +58,7 @@
         "ScheduleStart": "03:23",
         "ScheduleEnd": "05:32",
         "Password": "12345678@Ab",
-        "Role":"Admin",
+        "Role": "Admin",
         "profilePicture": "../../image/Gokupp.png"
     }
 ]
