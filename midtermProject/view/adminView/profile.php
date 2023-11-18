@@ -20,7 +20,7 @@ include '../../controller/adminControll/profile_process.php';
     </nav>
     
     <footer>
-        <p><a href="../control/logout_process.php">Logout</a></p>
+        <p><a href="../../controller/adminControll/logout_process.php">Logout</a></p>
     </footer>
 </body>
 </html>

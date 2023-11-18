@@ -49,9 +49,11 @@ $phpdata=json_decode(file_get_contents("../../data/doctorData.json"));
     'Contact'=>$contact,
    'EducationalInstitute'=> $eInstitute,
     'Specialization'=>$specializeIn,
+    'License'=>$licenseNo,
    'ScheduleStart'=> $scheduleStart,
    'ScheduleEnd'=>$scheduleEnd,
     'Password'=>$password,
+    'status'=>"inactive",
     'profilePicture'=>Null,
  );
 
@@ -219,6 +221,7 @@ else
 
 if($flag== 11)
 {
+    
     $existing_json_data=file_get_contents("../../data/doctorData.json");
     $existing_php_data=json_decode($existing_json_data);
 
@@ -228,7 +231,8 @@ if($flag== 11)
     if(file_put_contents("../../data/doctorData.json",$jsondata) ==true)
     {
         // echo"<meta http-equiv="."refresh"." "." url=.login.php".">";
-        echo "Registration successful";
+        // echo "Registration successful";
+        echo "Check after few minitues to ensure your status in the Home page";
     }
     else
     {

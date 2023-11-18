@@ -41,8 +41,11 @@ else {
                         <?php echo $passError; ?><br><br>
                         <input type="submit" value="LogIn" name="Login"/>
             <br>
-            If you haven't register yet. 
-            <a href="registration.php">Click here for Registration</a>
+            If you haven't register yet. Click here for <br>
+            <a href="../patientView/Registration.php">Register as Patient</a><br>
+            <a href="registration.php">Register as Doctor</a><br>
+            <a href="../adminView/registration.php">Register as Admin</a><br>
+            
                     </fieldset>
                 </form>
     

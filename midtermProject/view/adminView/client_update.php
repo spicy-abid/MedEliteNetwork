@@ -1,4 +1,5 @@
 <?php
+session_start();
 include '../../controller/adminControll/client_up_process.php';
 ?>
 

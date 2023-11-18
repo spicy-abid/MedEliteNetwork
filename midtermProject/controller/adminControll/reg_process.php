@@ -87,6 +87,7 @@ if(isset($_REQUEST["Submit"]))
         "Gender"=> $_POST["gender"] ,
         "Country" => $country,
         "City" => $city,
+        "Role" =>"Admin",
       );
       $phpdata[]=$formdata;
       $jsondata=json_encode($phpdata,JSON_PRETTY_PRINT);

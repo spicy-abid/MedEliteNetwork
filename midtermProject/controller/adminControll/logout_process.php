@@ -2,6 +2,6 @@
 session_start();
 if(session_destroy())
 {
-    header("Location: ../../view/adminView/login.php");
+    header("Location:../../view/doctorView/login.php");
 }
 ?>

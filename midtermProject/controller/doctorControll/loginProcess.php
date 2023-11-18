@@ -14,32 +14,40 @@ $pass=$_POST["password"];
 $passError=$usrError="";
 
 
-$jsondata=file_get_contents("../../data/doctorData.json");
-$php_data=json_decode($jsondata);
+$jsondataDoctor=file_get_contents("../../data/doctorData.json");
+$php_dataDoctor=json_decode($jsondataDoctor);
+$php_dataAdmin=json_decode(file_get_contents("../../data/adminData.json"));
+$php_dataPatient=json_decode(file_get_contents("../../data/patientData.json"));
 
-foreach($php_data as $data)
+foreach($php_dataDoctor as $dataDoctor)
 {
 //    echo $data->Email;
 //    echo $data->Password;
+
+
 if($uname!=""){
     if($pass!=""){
-
-        if($uname==$data->Email  )
+        // if($dataDoctor->Role=='Doctor')
+        // {
+        if($uname==$dataDoctor->Email  )
         {
-            if($pass==$data->Password )
-            {
-                // if($data->Role=='Doctor')
-                // {
-
+            if($pass==$dataDoctor->Password )
+            {  
+                if($dataDoctor->status== "Inactive")
+                {
+                    echo"please wait for validation";
+                    break;
+                }
+                else
+                {
                     $_SESSION['uname']=$uname;
                     $_SESSION['password']=$pass;
                     header('Location:../../view/doctorView/doctorProfile.php');
                     break;
-                // }
-                // else if($data->Role== 'Admin')
-                // {
-                    
-                // }
+                }
+               
+                   
+              
             }
             else
             {
@@ -53,6 +61,11 @@ if($uname!=""){
             $usrError= "<br>user not exist<br>";
     
         }
+    // }
+    // else if($data->Role== 'Admin')
+    // {
+        
+    // }
     
     }
     else
@@ -65,6 +78,78 @@ if($uname!=""){
     {
         $usrError= "Fill username  properly";
     }
+
+}
+
+foreach($php_dataAdmin as $dataAdmin)
+{
+
+
+        if($uname==$dataAdmin->UserName  )
+        {
+            if($pass==$dataAdmin->Password )
+            {  
+
+                
+            
+                    $_SESSION['uname']=$uname;
+                    $_SESSION['password']=$pass;
+                    header("Location: ../../view/adminView/profile.php");
+                    break;
+                
+               
+                   
+              
+            }
+            else
+            {
+                $passError=" Wrong Password";
+            }
+               
+               
+        }
+        else
+        {
+            $usrError= "<br>user not exist<br>";
+    
+        }
+ 
+}
+foreach($php_dataPatient as $dataPatient)
+{
+
+
+        if($uname==$dataPatient->UserName  )
+        {
+            if($pass==$dataPatient->Password )
+            {  
+
+                
+            
+                    $_SESSION['uname']=$uname;
+                    $_SESSION['password']=$pass;
+                    header("Location: ../../view/patientView/Profile.php"); 
+                    break;
+                
+               
+                   
+              
+            }
+            else
+            {
+                $passError=" Wrong Password";
+            }
+               
+               
+        }
+        else
+        {
+            $usrError= "<br>user not exist<br>";
+    
+        }
+ 
+    
+
 
 }
 ?>

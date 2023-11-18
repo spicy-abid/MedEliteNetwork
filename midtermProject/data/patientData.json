@@ -1,0 +1,48 @@
+[
+    {
+    "UserName": "Khalid Saifullah",
+    "Email": "khalidsaifullah9080@gmail.com",
+    "First name": "Khalid",
+    "lastname": "Saifullah",
+    "age": "24",
+    "Gender": "Male",
+    "Weight": "75kg",
+    "Hight": "5'11''",
+    "Blood Group": "O+",
+    "Death of Birth": "1999-06-14",
+    "Password": "Saifullah9080*",
+    "Phone Number": "01720452312",
+    "Image": {
+      "name": "khalid.jpg",
+      "type": "image/jpeg",
+      "tmp_name": "C:\\xampp\\tmp\\php3473.tmp",
+      "error": 0,
+      "size": 72994
+    },
+    "Address": "Bashundhara R/A; Block C; House -03;"
+  },
+  
+    {
+        "UserName": "fish25",
+        "Email": "fish@gmail.com",
+        "First name": "Gold",
+        "lastname": "Fish",
+        "age": "20",
+        "Gender": "Female",
+        "Weight": "50",
+        "Hight": "6",
+        "Blood Group": "A+",
+        "Death of Birth": "2000-03-20",
+        "Password": "12345Fish!",
+        "Phone Number": "01798090107",
+        "Image": {
+            "name": "goldfish.jpg",
+            "full_path": "goldfish.jpg",
+            "type": "image/jpeg",
+            "tmp_name": "S:\\SOFT\\XAMPP\\tmp\\php4D0.tmp",
+            "error": 0,
+            "size": 3530
+        },
+        "Address": "waterland"
+    }
+]

@@ -1,7 +1,7 @@
 [
     {
-        "firstName": "abid",
-        "lastName": "asdasd",
+        "firstName": "Abid",
+        "lastName": "Hossain",
         "gender": "Male",
         "HomeAddress": "Natore",
         "PermanentAddress": "Dhaka",
@@ -9,41 +9,12 @@
         "Contact": "01796993617",
         "EducationalInstitute": "DMC",
         "Specialization": "Orthopedics",
+        "License": "55555",
         "ScheduleStart": "05:30",
         "ScheduleEnd": "06:20",
         "Password": "12345678@Ab",
-        "Role": "Doctor",
+        "status": "Active",
         "profilePicture": "../../image/abidpp.png"
-    },
-    {
-        "firstName": "abid",
-        "lastName": "Hossain",
-        "gender": "Male",
-        "HomeAddress": "Natore",
-        "PermanentAddress": "Dhaka",
-        "Email": "abidhossain1717@gmail.com",
-        "Contact": "01796993617",
-        "EducationalInstitute": "DMC",
-        "Specialization": "Internal medicine",
-        "ScheduleStart": "03:20",
-        "ScheduleEnd": "04:20",
-        "Password": "12345678@Ab",
-        "profilePicture": null
-    },
-    {
-        "firstName": "abid",
-        "lastName": "Hossain",
-        "gender": "Male",
-        "HomeAddress": "Natore",
-        "PermanentAddress": "Natore",
-        "Email": "abidhossain1717@gmail.com",
-        "Contact": "01796993617",
-        "EducationalInstitute": "DMC",
-        "Specialization": "Neurology",
-        "ScheduleStart": "09:02",
-        "ScheduleEnd": "05:20",
-        "Password": "12345678@Ab",
-        "profilePicture": null
     },
     {
         "firstName": "Goku",
@@ -56,9 +27,10 @@
         "EducationalInstitute": "worlduniversity",
         "Specialization": "Internal medicine",
         "ScheduleStart": "03:23",
+        "License": "66666",
         "ScheduleEnd": "05:32",
         "Password": "12345678@Ab",
-        "Role": "Admin",
+        "status": "Inactive",
         "profilePicture": "../../image/Gokupp.png"
     }
 ]

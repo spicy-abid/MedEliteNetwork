@@ -8,6 +8,7 @@
         "Address": "112-1-A",
         "Gender": "Male",
         "Country": "Bangladesh",
-        "City": "Dhaka"
+        "City": "Dhaka",
+        "Role": "Admin"
     }
 ]
