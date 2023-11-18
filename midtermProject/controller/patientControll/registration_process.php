@@ -162,6 +162,7 @@ if(isset($_REQUEST["Submit"]))
         "Phone Number" => $phone ,
         "Image"=>$image,
         "Address" => $add ,
+        "prescription"=>null,
         
       );
       $phpdata[]=$formdata;

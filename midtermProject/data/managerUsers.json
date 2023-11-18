@@ -1,4 +1,12 @@
-  [ {"name": "Farzana", "email": "farzanasadia@gmail.com"},
-    {"name": "Mim", "email": "mim94CSSE@gmail.com"}
-  ]
-   
+[
+    {
+        "FirstName": "Farzana",
+        "LastName": "sadia",
+        "Gender": "Female",
+        "HomeAddress": "motijil",
+        "Email": "sadia12@gmail.com",
+        "Contact": "01729081975",
+        "Password": "123456a@",
+        "profilePicture": null
+    }
+]

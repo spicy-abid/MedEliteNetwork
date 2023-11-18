@@ -200,7 +200,7 @@ include '../../controller/patientControll/registration_process.php';
                             <tr>
                                 <td></td>
                                 <td><br>
-                                    Already have an account? Go to <a href="Login.php">Login</a>
+                                    Already have an account? Go to <a href="../doctorView/login.php">Login</a>
                                     page.
                                 </td>
                             </tr>

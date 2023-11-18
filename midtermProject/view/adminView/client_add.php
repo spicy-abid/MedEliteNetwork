@@ -9,7 +9,7 @@
 
     <nav>
         <ul>
-            <li><a href="registration.php">Add new patient.</a></li>
+        <li><a href="../patientView/Registration.php">Add new patient.</a></li>
         </ul>
     </nav>
 

@@ -1,28 +1,28 @@
-[
-    {
-    "UserName": "Khalid Saifullah",
-    "Email": "khalidsaifullah9080@gmail.com",
-    "First name": "Khalid",
-    "lastname": "Saifullah",
-    "age": "24",
-    "Gender": "Male",
-    "Weight": "75kg",
-    "Hight": "5'11''",
-    "Blood Group": "O+",
-    "Death of Birth": "1999-06-14",
-    "Password": "Saifullah9080*",
-    "Phone Number": "01720452312",
-    "Image": {
-      "name": "khalid.jpg",
-      "type": "image/jpeg",
-      "tmp_name": "C:\\xampp\\tmp\\php3473.tmp",
-      "error": 0,
-      "size": 72994
+{
+    "0": {
+        "UserName": "Khalid Saifullah",
+        "Email": "khalidsaifullah9080@gmail.com",
+        "First name": "Khalid",
+        "lastname": "Saifullah",
+        "age": "24",
+        "Gender": "Male",
+        "Weight": "75kg",
+        "Hight": "5'11''",
+        "Blood Group": "O+",
+        "Death of Birth": "1999-06-14",
+        "Password": "Saifullah9080*",
+        "Phone Number": "01720452312",
+        "Image": {
+            "name": "khalid.jpg",
+            "type": "image/jpeg",
+            "tmp_name": "C:\\xampp\\tmp\\php3473.tmp",
+            "error": 0,
+            "size": 72994
+        },
+        "Address": "Bashundhara R/A; Block C; House -03;",
+        "prescription": "Napa 1+1+1\r\nMaxpro 1+0+1"
     },
-    "Address": "Bashundhara R/A; Block C; House -03;"
-  },
-  
-    {
+    "1": {
         "UserName": "fish25",
         "Email": "fish@gmail.com",
         "First name": "Gold",
@@ -43,6 +43,7 @@
             "error": 0,
             "size": 3530
         },
-        "Address": "waterland"
+        "Address": "waterland",
+        "prescription": "Zimax 1+1+1"
     }
-]
+}

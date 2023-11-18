@@ -1,3 +1,8 @@
+<?php
+session_start();
+include("../../controller/doctorControll/patientRecordProcess.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +11,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
+    <center>
 
-        Patient data
-    </h1>
+        <h1>
+            
+            Patient data:
+            <h2>
+    
+                <a href="prescription.php">Prescreption</a>
+    
+               
+            </h2>
+        </h1>
+    </center>
 </body>
 </html>

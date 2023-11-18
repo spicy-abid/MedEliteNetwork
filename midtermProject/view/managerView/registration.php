@@ -1,5 +1,5 @@
 <?php 
-include '../../controller/adminControll/reg_process.php';
+include '../../controller/managerControll/reg_process.php';
 ?>
 
 <!DOCTYPE html>
@@ -14,8 +14,10 @@ include '../../controller/adminControll/reg_process.php';
         <table align="center">
             <td>
                 <fieldset > 
-                     <label for="uname"> UserName : </lebel><br>
-                     <input type="text" name="uname"><?php echo $uError ?><br>
+                     <label for="fname"> FirstName : </lebel><br>
+                     <input type="text" name="fname"><?php echo $fError ?><br>
+                     <label for="lname"> LastName : </lebel><br>
+                     <input type="text" name="lname"><?php echo $lError ?><br>
                      <label for="email"> Email : </label><br>
                      <input type="email" name="email"><?php echo $emailError ?><br>
                      <label for="pass"> Password : </lebel><br>
@@ -24,8 +26,6 @@ include '../../controller/adminControll/reg_process.php';
                      <input type="password" name="conpass"><?php echo $cpassError ?><br>
                      <label for="phone"> Phone Number : </lebel><br>
                      <input type="text" name="phone"><?php echo $phoneError ?><br>
-                     <label for="add"> Address : </lebel><br>
-                     <input type="text" name="add"><?php echo $addError ?><br>
                      <br>
                      <label for="gender"> Gender : </lebel>
                      <input type="radio" name="gender" value="Male"> Male 
@@ -38,6 +38,8 @@ include '../../controller/adminControll/reg_process.php';
                      <input type="text" name="country"><?php echo $countryError ?><br>
                      <label for="city"> City : </lebel><br>
                      <input type="text" name="city"><?php echo $cityError ?><br>
+                     <label for="add"> Address : </lebel><br>
+                     <input type="text" name="add"><?php echo $addError ?><br>
                      <input type="submit" name="Submit" value="Submit">
                      <input type="reset" name="Reset" value="Reset"><br>
                      <a href="../doctorView/login.php">Already have an account? Go to login.</a>

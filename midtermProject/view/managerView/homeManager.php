@@ -16,6 +16,7 @@
 
 <h2>Appointments</h2>
 <button onclick="location.href='bookedAppointment.php'">Booked Appointment</button>
-<button onclick="location.href='createAppointment.php'">Create Appointment </button>
+<button onclick="location.href='createAppointment.php'">Create Appointment </button><br>
+<p><a href="../../controller/managerControll/logout_process.php">Logout</a></p>
 </body>
 </html>

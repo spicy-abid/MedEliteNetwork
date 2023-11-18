@@ -9,7 +9,7 @@
 
     <nav>
         <ul>
-            <li><a href="registration.php">Add new manager.</a></li>
+        <li><a href="../../view/managerView/registration.php">Add new manager.</a></li>
         </ul>
     </nav>
 

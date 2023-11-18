@@ -21,8 +21,8 @@
        
         foreach ($users as $user) {
             echo '<tr>';
-            echo '<td>' . $user['name'] . '</td>';
-            echo '<td>' . $user['email'] . '</td>';
+            echo '<td>' . $user['FirstName'] . '</td>';
+            echo '<td>' . $user['Email'] . '</td>';
             echo '</tr>';
         }
 

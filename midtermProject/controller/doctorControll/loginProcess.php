@@ -18,6 +18,7 @@ $jsondataDoctor=file_get_contents("../../data/doctorData.json");
 $php_dataDoctor=json_decode($jsondataDoctor);
 $php_dataAdmin=json_decode(file_get_contents("../../data/adminData.json"));
 $php_dataPatient=json_decode(file_get_contents("../../data/patientData.json"));
+$php_dataManager=json_decode(file_get_contents("../../data/managerUsers.json")) ;
 
 foreach($php_dataDoctor as $dataDoctor)
 {
@@ -147,9 +148,47 @@ foreach($php_dataPatient as $dataPatient)
             $usrError= "<br>user not exist<br>";
     
         }
- 
+        foreach($php_dataManager as $dataManager)
+        {
+        
+        
+                if($uname==$dataManager->FirstName  )
+                {
+                    if($pass==$dataManager->Password )
+                    {  
+        
+                        
+                    
+                            $_SESSION['uname']=$uname;
+                            $_SESSION['password']=$pass;
+                            header("Location: ../../view/managerView/homeManager.php"); 
+                            break;
+                        
+                       
+                           
+                      
+                    }
+                    else
+                    {
+                        $passError=" Wrong Password";
+                    }
+                       
+                       
+                }
+                else
+                {
+                    $usrError= "<br>user not exist<br>";
+            
+                }
+         
+            
+        
+        
+        }
     
 
 
 }
+
+
 ?>

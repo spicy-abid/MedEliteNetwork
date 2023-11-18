@@ -45,6 +45,8 @@ else {
             <a href="../patientView/Registration.php">Register as Patient</a><br>
             <a href="registration.php">Register as Doctor</a><br>
             <a href="../adminView/registration.php">Register as Admin</a><br>
+            <a href="../managerView/registration.php">Register as Manager</a><br>
+            <a href="../Home_Page.php">Go to Home Page</a><br>
             
                     </fieldset>
                 </form>
