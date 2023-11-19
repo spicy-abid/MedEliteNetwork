@@ -4,8 +4,8 @@ include("../../controller/managerControll/doctorProfileProcess.php");
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+    <meta http-equiv="refresh" >
     <title>Document</title>
 </head>
 <body>
@@ -82,6 +82,7 @@ if (isset($_POST['change']) && $_POST["status"]!="None") {
     </select>
 
     <input type="submit" name="change" value="Change">
+    <?php echo $statusError; ?>
 </form>
 
 </body>

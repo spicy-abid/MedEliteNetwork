@@ -1,5 +1,5 @@
-{
-    "0": {
+[
+    {
         "UserName": "Khalid Saifullah",
         "Email": "khalidsaifullah9080@gmail.com",
         "First name": "Khalid",
@@ -20,9 +20,10 @@
             "size": 72994
         },
         "Address": "Bashundhara R/A; Block C; House -03;",
-        "prescription": "Napa 1+1+1\r\nMaxpro 1+0+1"
+        "prescription": "Napa 1+1+1\r\nMaxpro 1+0+1",
+        "Book": null
     },
-    "1": {
+    {
         "UserName": "fish25",
         "Email": "fish@gmail.com",
         "First name": "Gold",
@@ -44,6 +45,55 @@
             "size": 3530
         },
         "Address": "waterland",
-        "prescription": "Zimax 1+1+1"
+        "prescription": "Zimax 1+1+1",
+        "Book": null
+    },
+    {
+        "UserName": "Anu22",
+        "Email": "Malik@gmail.com",
+        "First name": "Anu",
+        "lastname": "Malik",
+        "age": "50",
+        "Gender": "Male",
+        "Weight": "26",
+        "Hight": "5.4",
+        "Blood Group": "A-",
+        "Death of Birth": "2023-11-23",
+        "Password": "123456@Anu",
+        "Phone Number": "01725252525",
+        "Image": {
+            "name": "Untitled.jpg",
+            "full_path": "Untitled.jpg",
+            "type": "image/jpeg",
+            "tmp_name": "S:\\SOFT\\XAMPP\\tmp\\phpFBC3.tmp",
+            "error": 0,
+            "size": 6414
+        },
+        "Address": "India",
+        "prescription": null
+    },
+    {
+        "UserName": "Tata20",
+        "Email": "tata@gmail.com",
+        "First name": "Tata",
+        "lastname": "Company",
+        "age": "25",
+        "Gender": "Others",
+        "Weight": "50",
+        "Hight": "6",
+        "Blood Group": "B",
+        "Death of Birth": "2023-11-02",
+        "Password": "12345Tata@",
+        "Phone Number": "01725252525",
+        "Image": {
+            "name": "Untitled3.jpg",
+            "full_path": "Untitled3.jpg",
+            "type": "image/jpeg",
+            "tmp_name": "S:\\SOFT\\XAMPP\\tmp\\php598B.tmp",
+            "error": 0,
+            "size": 4794
+        },
+        "Address": "Noland",
+        "prescription": null
     }
-}
+]

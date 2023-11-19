@@ -6,6 +6,8 @@ include("../../controller/doctorControll/doctorProfileProcess.php");
 
     <html>
         <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="refresh" >
             <title>Doctor Profile</title>
 </head>
         <body>
@@ -51,13 +53,27 @@ include("../../controller/doctorControll/doctorProfileProcess.php");
 <form action="" method="post">
     <h3>
  
-Fee's<input type="money" name="money" Id="money">
+Fee's<input type="number" name="money" Id="money">
     <input type="submit" name="set" value="Set" ><br>
-    <input type="submit" name="free" value="Free" ><br>
+    <?php echo $feeError; ?><br>
+    <!-- <input type="submit" name="free" value="Free" ><br> -->
 
     </h3>
     </form>
-    
+    <form action="" method="post">
+        <?php echo $available; ?>&nbsp; Status:
+        
+        <select name="availability" id="availability">
+            <option value="">None</option>
+            <option value="Available">Available</option>
+            <option value="Unavalable">Unavalable</option>
+        </select>
+        
+        <input type="submit" name="change" value="Change">
+        <?php echo $avalError; ?><br>
+        
+
+    </form>
 
 
     <br><br><br><br>

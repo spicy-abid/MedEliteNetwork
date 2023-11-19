@@ -6,8 +6,21 @@ if (empty($_SESSION['uname'])) {
 }
 
 
-$profilePicError="";
-
+$profilePicError=$avalError=$feeError="";
+if(isset($_POST["availability"])){
+$aval=$_POST['availability'];
+}
+else
+{
+    $aval="Unavailable";
+}
+if(isset($_POST["set"])){
+    $fee=$_POST['money'];
+    }
+    else
+    {
+        $fee=0;
+    }
 
 $jsondata = file_get_contents("../../data/doctorData.json");
 $php_data = json_decode($jsondata);
@@ -17,7 +30,7 @@ foreach ($php_data as $key => $data) {
 
         $fname = $data->firstName;
         $lname = $data->lastName;
-        $email = $data->Email;
+        $available = $data->Availability;
         $contct = $data->Contact;
 
         // Check if the profile picture is already set
@@ -57,6 +70,25 @@ foreach ($php_data as $key => $data) {
             }
         }
         } 
+        if(isset($_POST["change"]) && $_POST["availability"]!="")
+        {
+            $php_data[$key]->Availability = $aval;
+            file_put_contents('../../data/doctorData.json', json_encode($php_data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+        }
+        else
+        {
+            $avalError="No change";
+        }
+
+        if(isset($_POST["money"]))
+        {
+            $php_data[$key]->Fee = $fee;
+            file_put_contents('../../data/doctorData.json', json_encode($php_data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+        }
+        else
+        {
+            $feeError="No change";
+        }
 
     }
 }

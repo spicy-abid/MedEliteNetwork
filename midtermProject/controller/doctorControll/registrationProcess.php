@@ -53,8 +53,10 @@ $phpdata=json_decode(file_get_contents("../../data/doctorData.json"));
    'ScheduleStart'=> $scheduleStart,
    'ScheduleEnd'=>$scheduleEnd,
     'Password'=>$password,
-    'status'=>"inactive",
+    'status'=>"Inactive",
     'profilePicture'=>Null,
+    "Availability"=>"Unavalable",
+    "Fee"=> 0,
  );
 
 
@@ -226,7 +228,7 @@ if($flag== 11)
     $existing_php_data=json_decode($existing_json_data);
 
     $existing_php_data[]=$formdata;
-    $jsondata=json_encode($existing_php_data,JSON_PRETTY_PRINT);
+    $jsondata=json_encode($existing_php_data,JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 
     if(file_put_contents("../../data/doctorData.json",$jsondata) ==true)
     {

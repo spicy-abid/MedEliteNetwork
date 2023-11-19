@@ -36,7 +36,7 @@ if($uname!=""){
             {  
                 if($dataDoctor->status== "Inactive")
                 {
-                    echo"please wait for validation";
+                    echo"<br>please wait for validation";
                     break;
                 }
                 else

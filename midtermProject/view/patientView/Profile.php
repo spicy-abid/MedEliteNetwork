@@ -62,7 +62,7 @@ if (!isset($_SESSION['username']) && !isset($_SESSION['password'])) {
                 <li> <a href="Reports.php">Reports</a> </li>
                 <li> <a href="Appointment_Booking.php">Appointment Booking</a> </li>
                 <li> <a href="Patients_Problem.php">Patients Problem</a> </li>
-
+                <li> <a href="doctorBook.php">Book Doctor</a> </li>
             </ul>
         </nav>
 

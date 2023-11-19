@@ -83,6 +83,8 @@
                 <p>Name: KHALID SAIFULLAH</p>
                 <p>ID: 20-44024-2</p>
                 <p>Web Developer with a passion for coding and creating amazing websites. Experienced in HTML, CSS, and JavaScript.</p>
-                <a href=""></a>
+                <a href="https://github.com/Khalid9080">Git_link</a>
+            </td>
+        </tr>
        
-        <p>&copy; 2023 Our Project. All rights reserved.</p>
+        

@@ -142,42 +142,37 @@ if(isset($_REQUEST["Submit"]))
     }
 
 
-  if($haserror==0)
-  {    
-    $data=file_get_contents("../../data/patientData.json");
-    $phpdata=json_decode($data);
-    $formdata=array
-      (
-        "UserName" => $uname ,
-        "Email"=> $email,
-        "First name"=> $firstname,
-        "lastname"=> $lastname,
-        "age"=> $age,
-        "Gender"=> $gender ,
-        "Weight"=> $weight,
-        "Hight"=> $hight,
-        "Blood Group"=> $bg,
-        "Death of Birth"=>$dob,
-        "Password" => $pass ,
-        "Phone Number" => $phone ,
-        "Image"=>$image,
-        "Address" => $add ,
-        "prescription"=>null,
-        
+    if ($haserror == 0) {    
+      $data = file_get_contents("../../data/patientData.json");
+      $phpdata = json_decode($data, true);
+  
+      $formdata = array(
+          "UserName" => $uname,
+          "Email" => $email,
+          "First name" => $firstname,
+          "lastname" => $lastname,
+          "age" => $age,
+          "Gender" => $gender,
+          "Weight" => $weight,
+          "Hight" => $hight,
+          "Blood Group" => $bg,
+          "Death of Birth" => $dob,
+          "Password" => $pass,
+          "Phone Number" => $phone,
+          "Image" => $image,
+          "Address" => $add,
+          "prescription" => null,
       );
-      $phpdata[]=$formdata;
-      $jsondata=json_encode($phpdata,JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
-
-      if(file_put_contents("../../data/patientData.json",$jsondata))
-      {
-        echo "Data Saved Successfully" ;
+  
+      $phpdata[] = $formdata;
+      $jsondata = json_encode($phpdata, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+  
+      if (file_put_contents("../../data/patientData.json", $jsondata)) {
+          echo "Data Saved Successfully";
+      } else {
+          echo "Data Saving Failed";
       }
-      else
-      {
-        echo "Data Saving Failed" ;
-      }
-
   }
-}
+}  
 
 ?>

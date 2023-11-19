@@ -13,8 +13,10 @@
         "ScheduleStart": "05:30",
         "ScheduleEnd": "06:20",
         "Password": "12345678@Ab",
-        "status": "Active",
-        "profilePicture": "../../image/abidpp.png"
+        "status": "Inactive",
+        "profilePicture": "../../image/Abidpp.png",
+        "Availability": "Available",
+        "Fee": ""
     },
     {
         "firstName": "Goku",
@@ -30,7 +32,47 @@
         "License": "66666",
         "ScheduleEnd": "05:32",
         "Password": "12345678@Ab",
+        "status": "Active",
+        "profilePicture": "../../image/Gokupp.png",
+        "Availability": "Available",
+        "Fee": "500"
+    },
+    {
+        "firstName": "Nannu",
+        "lastName": "Patha",
+        "gender": "Male",
+        "HomeAddress": "Mogbazar",
+        "PermanentAddress": "Hatirjheel",
+        "Email": "nannu32@gmail.com",
+        "Contact": "01724242424",
+        "EducationalInstitute": "Dompara Medical Collage",
+        "Specialization": "Pediatrics",
+        "License": "242424",
+        "ScheduleStart": "03:44",
+        "ScheduleEnd": "03:47",
+        "Password": "12345Nannu#",
+        "status": "Active",
+        "profilePicture": null,
+        "Availability": "Unavalable",
+        "Fee": 0
+    },
+    {
+        "firstName": "Poker",
+        "lastName": "Boy",
+        "gender": "Male",
+        "HomeAddress": "Tkoyo",
+        "PermanentAddress": "thailand",
+        "Email": "poker23@gmail.com",
+        "Contact": "01724242424",
+        "EducationalInstitute": "panipath",
+        "Specialization": "Ophthalmology",
+        "License": "99899",
+        "ScheduleStart": "03:48",
+        "ScheduleEnd": "03:49",
+        "Password": "12345Poker@",
         "status": "Inactive",
-        "profilePicture": "../../image/Gokupp.png"
+        "profilePicture": null,
+        "Availability": "Unavalable",
+        "Fee": 0
     }
 ]

@@ -50,6 +50,7 @@ else {
             
                     </fieldset>
                 </form>
+                
     
     <footer>
         Author: Hossain, Md Abid
@@ -57,5 +58,6 @@ else {
         <a href="abidhossain6781@gmail.com">E-mail</a>
     </footer>
             </center>
+            <a href="checker.php">Doctor Please check your status</a>
 </body>
 </html>

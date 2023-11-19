@@ -1,6 +1,7 @@
 <?php
 
 $newlicense = $newstatus = null;
+$statusError="";
 
 $phpdata = json_decode(file_get_contents("../../data/doctorData.json"), true);
 
@@ -20,13 +21,11 @@ foreach ($phpdata as $key => $data) {
             // Save the updated data back to the JSON file
             file_put_contents('../../data/doctorData.json', json_encode($phpdata, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
 
-            echo "Status changed";
+            $statusError= "Status changed";
             break;
         } else {
-            echo "License does not match";
+            $statusError= "License does not match";
         }
-    } else {
-        echo "Update not requested or failed";
-    }
+    } 
 }
 ?>
