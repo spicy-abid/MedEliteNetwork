@@ -37,6 +37,7 @@
         echo "Payment Fee". $doctor['Fee'] ."<br><br>";
     }
     ?>
+    <p><a href="Profile.php">Go back</a></p>
 </body>
  
 </html>

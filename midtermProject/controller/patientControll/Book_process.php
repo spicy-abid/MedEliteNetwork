@@ -12,8 +12,8 @@ if (isset($_POST["book"])) {
     if (empty($patientName)) {
         $patientError = "  Please enter patient name";
     } else {
-        $php_dataDoctor = json_decode(file_get_contents("doctorData.json"), true);
-        $php_dataPatient = json_decode(file_get_contents("patientData.json"), true);
+        $php_dataDoctor = json_decode(file_get_contents("../../data/doctorData.json"), true);
+        $php_dataPatient = json_decode(file_get_contents("../../data/patientData.json"), true);
         $book = findBook($php_dataDoctor, $docName);
 
         if ($book !== null) 
@@ -34,7 +34,7 @@ if (isset($_POST["book"])) {
 
             $jsondata = json_encode($php_dataPatient, JSON_PRETTY_PRINT);
             
-            if (file_put_contents("patientData.json", $jsondata)) {
+            if (file_put_contents("../../data/patientData.json", $jsondata)) {
                 echo "<p>Doctor Booked Successfully</p>";
             } else {
                 echo "<p>Doctor Booking Failed</p>";

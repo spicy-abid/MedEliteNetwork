@@ -1,0 +1,36 @@
+body{
+    background-color:lightblue;
+    }
+    
+    #firstName{
+    color:navy;
+    /* margin-left:20px; */
+    
+    }
+
+    table{
+        margin-top: 50px;
+    }
+    
+    #re{
+        color: rgb(25, 27, 26);
+        align-items: center;
+        margin-top: 150px;
+        margin-left: 60px;
+        border: 2px solid navy; /* Add a border */
+        border-radius: 5px; /* Add rounded corners */
+        outline: none; /* Remove the default focus outline */
+       
+    }
+
+    #reset,#submit{
+        margin-top: 20px;
+        color: darkgreen;
+        background-color: #4caf50; /* Green background color */
+        padding: 10px 20px; /* Add padding for spacing inside the button */
+        border: none; /* Remove the default button border */
+        border-radius: 5px; /* Add rounded corners */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        outline: none; /* Remove the default focus outline */
+        transition: background-color 0.3s;
+    }

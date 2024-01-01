@@ -81,7 +81,9 @@ if (isset($_POST['change']) && $_POST["status"]!="None") {
         <option value="Inactive">Inactive</option>
     </select>
 
-    <input type="submit" name="change" value="Change">
+    <input type="submit" name="change" value="Change"><br>
+    <a href=homeManager.php>Go back</a>
+
     <?php echo $statusError; ?>
 </form>
 

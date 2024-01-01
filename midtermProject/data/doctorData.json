@@ -52,7 +52,7 @@
         "ScheduleEnd": "03:47",
         "Password": "12345Nannu#",
         "status": "Active",
-        "profilePicture": null,
+        "profilePicture": "../../image/Nannupp.png",
         "Availability": "Unavalable",
         "Fee": 0
     },

@@ -26,6 +26,7 @@
         }
 
         echo '</table>';
+        echo "<a href="."categories.php".">Go back</a>";
     } else {
         echo '<p>No  information available.</p>';
     }

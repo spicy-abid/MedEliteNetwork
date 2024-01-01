@@ -17,6 +17,7 @@ include "../../controller/patientControll/Book_process.php";
         <input type="text" name="patientName"><?php echo $patientError ?><br>
 
         <button type="submit" name="book">Submit</button>
+        <p><a href="Profile.php">Go back</a></p>
     </form>
 </body>
 </html>

@@ -9,6 +9,7 @@
 
 <body>
     <h1 align="center">This is Patients Report page</h1>
+    <p><a href="Profile.php">Go back</a></p>
 </body>
 
 </html>

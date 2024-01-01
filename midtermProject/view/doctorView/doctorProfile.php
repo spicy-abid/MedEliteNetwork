@@ -6,25 +6,31 @@ include("../../controller/doctorControll/doctorProfileProcess.php");
 
     <html>
         <head>
-        <meta charset="UTF-8">
+            <link rel="stylesheet" type="text/css" href="../../css/doctorProfileStyle.css">
+            <meta charset="UTF-8">
     <meta http-equiv="refresh" >
             <title>Doctor Profile</title>
+            <script src="../../js/myscript.js"></script>
+            
 </head>
         <body>
             
 
-<form action="", method="POST" align="center">
-    <center>
-        <h1>
-            Hello Doctor  <?php echo $fname ."&nbsp;". $lname ."<br>"; ?>
+<form action="", method="POST" >
+    
+        <h2>
+           <label id="n">
+               Hello Doctor <br> <?php echo $fname ."<br>"; ?>
+               
+               </label> 
 
-        </h1>
+        </h2>
 
                 
-    </center>
+    
     
 </form>
-<!-- check? -->
+
 <fieldset >
 <legend>Profile</legend>
 <form action="" method="POST" enctype="multipart/form-data">
@@ -33,14 +39,15 @@ include("../../controller/doctorControll/doctorProfileProcess.php");
         <table border="1">
             <tr>
                 <td>
-                    <img src="<?php echo $profilePic;?>" /><br>
+                    <img id="pp"src="<?php echo $profilePic;?>" /><br>
                     
                 </td>
             </tr>
         </table>
        <input type="file"  id="profilePic" name="profilePic">   <br>
     <input type="submit" name="update" value="update">Profile Picture<br>
-    <?php echo $profilePicError; ?>
+    <?php echo $profilePicError; ?><br>
+    
 
     
    
@@ -50,12 +57,16 @@ include("../../controller/doctorControll/doctorProfileProcess.php");
      
     
 </form>
-<form action="" method="post">
+<form action="" method="post" >
     <h3>
  
-Fee's<input type="number" name="money" Id="money">
-    <input type="submit" name="set" value="Set" ><br>
-    <?php echo $feeError; ?><br>
+  <label id="fee">
+  Fee's
+      </label>  
+      <input type="number" name="money" id="money"> 
+<!-- <button name="hideButton" id="hideButton">HIDE</button> -->
+<input type="submit" name="set" value="Set" id="set"><br>
+<?php echo $feeError; ?><br>
     <!-- <input type="submit" name="free" value="Free" ><br> -->
 
     </h3>
@@ -77,13 +88,13 @@ Fee's<input type="number" name="money" Id="money">
 
 
     <br><br><br><br>
-    <a href='../../controller/doctorControll/logoutProcess.php' >Logout </a>
+    <a href='../../controller/doctorControll/logoutProcess.php' id="logout" >Logout </a>
 
 </fieldset>
 
-<h2>
+<h2 >
 
-<a href="patientRecord.php">Patient Record</a> <br>
+<a  href="patientRecord.php" id="ii">Patient Record</a> <br>
 </h2>
 
 <footer>

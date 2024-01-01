@@ -29,9 +29,8 @@
     } else {
         echo '<p>No  information available.</p>';
     }
-   echo "<a href="."addCategory.php".">Add category</a>";
-
-
+   echo "<a href="."addCategory.php".">Add category</a>"."<br>";
+   echo "<a href="."homeManager.php".">Go back</a>";
 
     ?>
 </body>

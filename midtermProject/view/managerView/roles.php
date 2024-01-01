@@ -24,6 +24,7 @@
         }
 
         echo '</table>';
+        echo "<a href="."homeManager.php".">Go back</a>";
     } else {
         echo '<p>No roles information available.</p>';
     }

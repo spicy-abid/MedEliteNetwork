@@ -1,6 +1,6 @@
 <?php
 //all varable are declared here
-
+include'../../model/mydb.php';
 $fname=$_POST["firstName"];
 $lname=$_POST["lastName"];
 // $gender=$_POST["gender"];
@@ -214,7 +214,24 @@ else
 }
 if(isset($licenseNo) && $licenseNo!= "")
 {
-$flag++;
+    $mydb=new mydb();
+    $conObj= $mydb->openCon();
+
+    
+    $result=$mydb->checkAvailability($conObj,'doctordb','licenseNo',$licenseNo);
+  
+    if($result->num_rows > 0)
+{
+    
+    $licenseError="Please Dont do anything illegal Write your own license";
+}
+else
+{
+    $flag++;
+    
+}
+$mydb->closeCon( $conObj);
+
 }
 else
 {
@@ -224,23 +241,37 @@ else
 if($flag== 11)
 {
     
-    $existing_json_data=file_get_contents("../../data/doctorData.json");
-    $existing_php_data=json_decode($existing_json_data);
+    // $existing_json_data=file_get_contents("../../data/doctorData.json");
+    // $existing_php_data=json_decode($existing_json_data);
 
-    $existing_php_data[]=$formdata;
-    $jsondata=json_encode($existing_php_data,JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+    // $existing_php_data[]=$formdata;
+    // $jsondata=json_encode($existing_php_data,JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 
-    if(file_put_contents("../../data/doctorData.json",$jsondata) ==true)
+    // if(file_put_contents("../../data/doctorData.json",$jsondata) ==true)
+    // {
+    //     // echo"<meta http-equiv="."refresh"." "." url=.login.php".">";
+    //     // echo "Registration successful";
+    //     echo "Check after few minitues to ensure your status in the Home page";
+    // }
+    // else
+    // {
+    //     echo "Registration failed";
+    // }
+        $valid='Deactive';
+        $name=$fname." ".$lname;
+        $mydb=new mydb();
+        $conObj= $mydb->openCon();
+
+        $result=$mydb->insertUser($conObj,"doctordb",$name,$gender,$haddress,$paddress,$email,$contact,$eInstitute,$specializeIn,$licenseNo,$scheduleStart,$scheduleEnd,$password,$valid);
+    if($result== true)
     {
-        // echo"<meta http-equiv="."refresh"." "." url=.login.php".">";
-        // echo "Registration successful";
-        echo "Check after few minitues to ensure your status in the Home page";
+        echo "Registration Successfull";
     }
     else
     {
-        echo "Registration failed";
+        echo "Registration Failed";
     }
-
+    $mydb->closeCon( $conObj);
 }
 else
 {

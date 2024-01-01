@@ -9,6 +9,7 @@
 
 <body>
     <h1 align="center">This is Appointment Booking Page</h1>
+    <p><a href="Profile.php">Go back</a></p>
 </body>
 
 </html>

@@ -27,6 +27,9 @@
         }
 
         echo '</table>';
+   echo "<a href="."homeManager.php".">Go back</a>";
+
+
     } else {
         echo '<p>No user information available.</p>';
     }

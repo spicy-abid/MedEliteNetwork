@@ -14,12 +14,12 @@
         "Phone Number": "01720452312",
         "Image": {
             "name": "khalid.jpg",
-            "type": "image/jpeg",
+            "type": "image\/jpeg",
             "tmp_name": "C:\\xampp\\tmp\\php3473.tmp",
             "error": 0,
             "size": 72994
         },
-        "Address": "Bashundhara R/A; Block C; House -03;",
+        "Address": "Bashundhara R\/A; Block C; House -03;",
         "prescription": "Napa 1+1+1\r\nMaxpro 1+0+1",
         "Book": null
     },
@@ -39,14 +39,14 @@
         "Image": {
             "name": "goldfish.jpg",
             "full_path": "goldfish.jpg",
-            "type": "image/jpeg",
+            "type": "image\/jpeg",
             "tmp_name": "S:\\SOFT\\XAMPP\\tmp\\php4D0.tmp",
             "error": 0,
             "size": 3530
         },
         "Address": "waterland",
         "prescription": "Zimax 1+1+1",
-        "Book": null
+        "Book": "Goku 66666"
     },
     {
         "UserName": "Anu22",
@@ -64,7 +64,7 @@
         "Image": {
             "name": "Untitled.jpg",
             "full_path": "Untitled.jpg",
-            "type": "image/jpeg",
+            "type": "image\/jpeg",
             "tmp_name": "S:\\SOFT\\XAMPP\\tmp\\phpFBC3.tmp",
             "error": 0,
             "size": 6414
@@ -88,7 +88,7 @@
         "Image": {
             "name": "Untitled3.jpg",
             "full_path": "Untitled3.jpg",
-            "type": "image/jpeg",
+            "type": "image\/jpeg",
             "tmp_name": "S:\\SOFT\\XAMPP\\tmp\\php598B.tmp",
             "error": 0,
             "size": 4794
